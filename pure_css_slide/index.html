@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 슬라이드 만들기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>CSS 슬라이드 만들기</h1>
+        <div class="area_slide">
+            <input id="inp_slide1" type="radio" name="select" class="input" checked>
+            <input id="inp_slide2" type="radio" name="select" class="input">
+            <input id="inp_slide3" type="radio" name="select" class="input">
+            <input id="inp_slide4" type="radio" name="select" class="input">
+            <div class="photos">
+                <div class="photo" id="box_slide1">
+                    <img alt="" src="img_player1.jpg" />
+                    <label for="inp_slide2" class="btn btn-inside next">›</label>
+                </div>
+                <div class="photo" id="box_slide2">
+                    <img alt="" src="img_player2.jpg" />
+                    <label for="inp_slide1" class="btn btn-inside prev">‹</label>
+                    <label for="inp_slide3" class="btn btn-inside next">›</label>
+                </div>
+                <div class="photo" id="box_slide3">
+                    <img alt="" src="img_player3.jpg" />
+                    <label for="inp_slide2" class="btn btn-inside prev">‹</label>
+                    <label for="inp_slide4" class="btn btn-inside next">›</label>
+                </div>
+                <div class="photo" id="box_slide4">
+                    <img alt="" src="img_player4.jpg" />
+                    <label for="inp_slide3" class="btn btn-inside prev">‹</label>
+                    <label for="inp_slide1" class="btn btn-inside next">«</label>
+                </div>
+            </div>
+            <label for="inp_slide1" class="btn btn-outside inp_slide1">1</label>
+            <label for="inp_slide2" class="btn btn-outside inp_slide2">2</label>
+            <label for="inp_slide3" class="btn btn-outside inp_slide3">3</label>
+            <label for="inp_slide4" class="btn btn-outside inp_slide4">4</label>
+        </div>
+    </div>
+</body>
+
+</html>

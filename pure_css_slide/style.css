@@ -1,0 +1,116 @@
+html,body,div {
+	margin: 0;
+	padding: 0;
+}
+body,
+.btn {
+	background:#fff;
+}
+h1 {
+	color:#000;
+	font-size:25px;
+	text-align: center;
+}
+img {
+	display: block;
+	width: 100%;
+}
+.area_slide {
+	overflow:hidden;
+	width: 440px;
+	margin: 20px auto;
+	padding: 20px 0;
+	position:relative;
+	text-align: center;
+	background-color:#d2d2d2;
+}
+.photos {
+	width: 1760px;
+	height: 400px;
+	position: relative;
+}
+.photo {
+	float:left;
+	width: 400px;
+	height: 500px;
+	position: relative;
+	padding: 0 20px;
+	overflow: hidden;
+}
+.input {
+	position: absolute;
+	clip:rect(0,0,0,0);
+}
+.btn {
+	display: inline-block;
+	padding: 10px;
+	cursor: pointer;
+	text-align: center;
+}
+.btn:hover {
+	color:#fff;
+	background-color:#000;
+}
+.btn-inside {
+	position: absolute;
+	border-radius: 50%;
+	font-size: 40px;
+	font-family: arial;
+	height: 40px;
+	width: 40px;
+	line-height: 0.9;
+	top: 220px;
+}
+.btn-outside {
+	padding: 0 10px;
+	margin-top: 20px;
+}
+.next {
+	right: -20px;
+}
+.prev {
+	left:-20px;
+}
+.btn-inside {
+	display:none;
+}
+#inp_slide1:checked ~ .photos #box_slide1 .btn-inside,
+#inp_slide2:checked ~ .photos #box_slide2 .btn-inside,
+#inp_slide3:checked ~ .photos #box_slide3 .btn-inside,
+#inp_slide4:checked ~ .photos #box_slide4 .btn-inside {
+	display:inline-block;
+}
+#inp_slide1:checked ~ .inp_slide1,
+#inp_slide2:checked ~ .inp_slide2,
+#inp_slide3:checked ~ .inp_slide3,
+#inp_slide4:checked ~ .inp_slide4 {
+    background-color:#000;
+    color:#fff;
+}
+/* animations */
+.btn,
+.photos {
+	-webkit-transition:0.4s;
+	-moz-transition:0.4s;
+	transition:0.4s;
+}
+#inp_slide1:checked ~ .photos {
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+#inp_slide2:checked ~ .photos {
+	-webkit-transform: translate3d(-440px,0,0);
+	-moz-transform: translate3d(-440px,0,0);
+	transform: translate3d(-440px,0,0);
+}
+#inp_slide3:checked ~ .photos {
+	-webkit-transform: translate3d(-880px,0,0);
+	-moz-transform: translate3d(-880px,0,0);
+	transform: translate3d(-880px,0,0);
+}
+#inp_slide4:checked ~ .photos {
+	-webkit-transform: translate3d(-1320px,0,0);
+	-moz-transform: translate3d(-1320px,0,0);
+	transform: translate3d(-1320px,0,0);
+}
